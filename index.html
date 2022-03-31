@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick tip!</title>
+</head>
+<body>
+    <h1>PropinApp</h1>
+    <section>
+        <div>
+            <label for="tuTarifa">Tarifa</label>
+            <input type="number" placeholder="Tu tarifa" id="tuTarifa">
+        </div>
+        <div>
+            <div>
+                <label for="">Porcentaje de propina</label>
+                <span id="porcentajePropina"></span>
+            </div>
+            <input type="range" value="0" id="inputPropina">
+        </div>
+        <div>
+            <span>Propina</span>
+            <span id="valorPropina"></span>
+        </div>
+        <hr>
+        <div>
+            <span>Total</span>
+            <span id="totalConPropina"></span>
+        </div>
+    </section>
+    <section>
+        <div>
+            <div>
+                <label for="">Cuantos somos?</label>
+                <span id="cantidadPersonas">1 persona</span>
+            </div>
+        <input type="range" min="1" max="10" value="1" id="divisionInput">
+        </div>
+        <div>
+            <span>Tarifa cada uno</span>
+            <span id="tarifaDividida"></span>
+        </div>
+        <div>
+            <span>Propina cada uno</span>
+            <span id="propinaDividida"></span>
+        </div>
+    </section>
+</body>
+</html>
