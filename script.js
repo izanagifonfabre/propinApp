@@ -12,8 +12,8 @@ function update(){
    let porcentajePropina = document.getElementById("inputPropina").value; 
    let division = document.getElementById("divisionInput").value; 
    let valorPropina = tarifa * (porcentajePropina / 100);
-   let propinaCadaUno = valorPropina / division
-   let nuevoTotalIndividual = (tarifa + propinaCadaUno) / division;
+   let propinaCadaUno = valorPropina / division;
+   let nuevoTotalIndividual = (tarifa / division) + propinaCadaUno;
    document.getElementById("porcentajePropina").innerHTML = porcentajePropina + "%";
    document.getElementById("valorPropina").innerHTML = formatMoney(valorPropina);
    document.getElementById("totalConPropina").innerHTML = formatMoney(tarifa + valorPropina);
